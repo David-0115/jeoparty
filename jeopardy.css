@@ -1,0 +1,149 @@
+/* some colors you may find useful:
+  #115ff4 blue
+  #060ce9 dark blue
+  #28a200 green
+  #8d2ab5 purple
+  #74119c purple
+*/
+body {
+  display: flex;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: center;
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+}
+
+.gamediv {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+table {
+  width: 1024px;
+  height: 785px;
+}
+
+.off {
+  background-image: url("jeopartytablebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.on {
+  background-color: #060ce9;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+thead {
+  height: 64px;
+}
+
+th,
+td {
+  color: white;
+  text-align: center;
+  width: 168px
+}
+
+td {
+  height: 144px;
+  font-size: 18px;
+}
+
+
+
+.border {
+  border: 1px solid;
+  border-color: white;
+  border-collapse: collapse;
+}
+
+#new-game {
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+  border: 1px solid white;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#new-game:hover {
+  color: #115ff4;
+  text-shadow: 1px 1px 2px white;
+  border: 1px solid #115ff4;
+}
+
+#new-game:active {
+  color: #8d2ab5;
+  border: 1px solid #8d2ab5;
+}
+
+#new-game-div {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 730px;
+}
+
+#credits {
+  position: absolute;
+  top: 825px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+p:hover {
+  color: #115ff4;
+}
+
+p:active {
+  color: #8d2ab5;
+}
+
+.d-none {
+  display: none;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+
+.spin::before {
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #1c87c9;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Jeoparty</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Copse&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="jeopardy.css">
+</head>
+
+<body>
+      <div class="gamediv">
+            <table class="gameboard off" id="gameboard">
+                  <thead>
+                        <tr class="th-row">
+                              <th scope="col" class="category" id="c0">&nbsp;</th>
+                              <th scope="col" class="category" id="c1">&nbsp;</th>
+                              <th scope="col" class="category" id="c2">&nbsp;</th>
+                              <th scope="col" class="category" id="c3">&nbsp;</th>
+                              <th scope="col" class="category" id="c4">&nbsp;</th>
+                              <th scope="col" class="category" id="c5">&nbsp;</th>
+                        </tr>
+                  </thead>
+                  <tbody class="questions" id="questions">
+                        <tr class="row" id="row0">
+                              <td class="question" id="00">&nbsp;</td>
+                              <td class="question" id="10">&nbsp;</td>
+                              <td class="question" id="20">&nbsp;</td>
+                              <td class="question" id="30">&nbsp;</td>
+                              <td class="question" id="40">&nbsp;</td>
+                              <td class="question" id="50">&nbsp;</td>
+                        </tr>
+                        <tr class="row" id="row1">
+                              <td class="question" id="01">&nbsp;</td>
+                              <td class="question" id="11">&nbsp;</td>
+                              <td class="question" id="21">&nbsp;</td>
+                              <td class="question" id="31">&nbsp;</td>
+                              <td class="question" id="41">&nbsp;</td>
+                              <td class="question" id="51">&nbsp;</td>
+                        </tr>
+                        <tr class="row" id="row2">
+                              <td class="question" id="02">&nbsp;</td>
+                              <td class="question" id="12">&nbsp;</td>
+                              <td class="question" id="22">&nbsp;</td>
+                              <td class="question" id="32">&nbsp;</td>
+                              <td class="question" id="42">&nbsp;</td>
+                              <td class="question" id="52">&nbsp;</td>
+                        </tr>
+                        <tr class="row" id="row3">
+                              <td class="question" id="03">&nbsp;</td>
+                              <td class="question" id="13">&nbsp;</td>
+                              <td class="question" id="23">&nbsp;</td>
+                              <td class="question" id="33">&nbsp;</td>
+                              <td class="question" id="43">&nbsp;</td>
+                              <td class="question" id="53">&nbsp;</td>
+                        </tr>
+                        <tr class="row" id="row4">
+                              <td class="question" id="04">&nbsp;</td>
+                              <td class="question" id="14">&nbsp;</td>
+                              <td class="question" id="24">&nbsp;</td>
+                              <td class="question" id="34">&nbsp;</td>
+                              <td class="question" id="44">&nbsp;</td>
+                              <td class="question" id="54">&nbsp;</td>
+                        </tr>
+                  </tbody>
+            </table>
+      </div>
+      <div id="new-game-div">
+            <h1 id="new-game">New Game</h1>
+      </div>
+      <div id="credits" class="credit">
+            <p class="credit"><a href="credits.html">Credits</a></p>
+
+      </div>
+
+
+      <script src="https://unpkg.com/jquery"></script>
+      <script src="https://unpkg.com/axios/dist/axios.js"></script>
+      <script src="https://unpkg.com/lodash"></script>
+      <script src="jeopardy.js"></script>
+
+</body>
+
+</html>
